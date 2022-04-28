@@ -1,0 +1,230 @@
+/*
+	Syntactically Awesome Stylesheets (SASS, https://sass-lang.com/) is a preprocessing language for CSS. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like SASS though: 
+	- more legible/simpler markup
+	- CSS compression 
+	- reusable code 
+
+// Instead of using the curly brackets {} to contain our properties for a selector's styling, SASS uses indenting. The code below will be processed into *{box-sizing:border-box} in our CSS.
+
+#main-nav
+	display: flex
+	justify-content: space-evenly
+
+	.projectDisplay
+		display: flex
+		justify-content: space-evenly
+		flex-wrap: wrap
+		//display: grid
+		//grid-template-columns: 0.8fr 1fr 0.8fr
+		//grid-template-rows: 1fr 1fr 1fr
+		margin: 0
+
+	.project
+
+		grid-template-columns: 1fr
+		grid-template-rows:75% 25% 
+	
+		margin-bottom: 1rem
+		margin-top: 0.5rem
+
+
+.title
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	//grid-template-columns: 1fr 4fr
+
+
+.aboutMe
+	display: flex
+	flex-wrap: wrap
+	
+	//display: grid
+	//grid-template-rows:1fr 1fr
+	//grid-template-columns: 1fr
+			
+
+	.aboutMeText
+		grid-column-start:2
+		grid-column-end: 3
+		grid-row-start:2
+		grid-row-end: 3
+
+#ContactMe
+	grid-column-start:2
+	grid-column-end: 3
+	grid-row-start:2
+	grid-row-end: 3
+
+.tagSection
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+
+	div
+
+		p
+			text-align: center
+			color:#FFFFFF
+		
+
+.aboutMeText
+		margin-left:1rem
+		margin-top: 0.3rem
+		grid-column-start:2
+		grid-column-end: 3
+
+.tagSidebar
+	display: grid
+	grid-template-columns: 1fr
+	.roleTag
+		margin-bottom: 0.5rem
+		padding-right:1rem
+		padding-left:1rem
+
+
+.tagLayout
+	display: flex
+	justify-content: flex-start
+	flex-wrap: wrap
+	.roleTag
+
+.headSection
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.timesNotedImg
+	display: flex
+	flex-wrap: wrap
+
+.hellgeneDuoImgHolder
+	display: flex
+	flex-wrap: wrap
+
+.hellgeneTriImgHolder
+	display: flex
+	flex-wrap: wrap
+
+.NFTCardCollection
+	display: flex
+	flex-wrap: wrap
+
+.projectIndepth
+	display: grid
+	grid-template-columns: 1fr
+
+.headSection
+		grid-column-start:1
+		grid-column-end: 2
+
+.regularSection
+	grid-column-start: 1 
+	grid-column-end: 2
+
+.sideBar2Tag
+	grid-column-start: 1 
+	grid-column-end: 2
+	min-width:13rem
+	display: grid
+	grid-template-rows:0.5fr 2fr
+	//flex-wrap: wrap
+	grid-template-columns: 1fr
+
+.sideBar3Tag
+	grid-column-start: 1 
+	grid-column-end: 2
+	min-width:13rem
+	display: grid
+	grid-template-rows:0.5fr 2fr
+	//flex-wrap: wrap
+	grid-template-columns: 1fr
+
+//31.25 rem = 500px
+@media (min-width: 31.25rem) 
+
+
+
+	.project
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 75% 25% 
+	
+		margin-bottom: 1rem
+
+	.projectDisplay
+		display: flex
+		justify-content: space-evenly
+		flex-wrap: wrap
+		//display: grid
+		//grid-template-columns: 0.8fr 1fr 0.8fr
+		//grid-template-rows: 1fr 1fr 1fr
+		margin: 1rem	
+
+//35 rem = 560px	
+@media (min-width: 35rem) 
+	.title
+		flex-wrap: wrap
+		justify-content: flex-start
+		//grid-template-columns: 1fr 4fr
+
+//37.5 rem = 600px
+@media (min-width: 37.5rem) 
+	.aboutMe
+	
+
+
+
+		.aboutMeText
+			grid-row-start:1
+			grid-row-end: 2	
+
+//55 rem = 880px
+@media (min-width: 55rem) 
+	.aboutMe
+	
+
+
+
+
+		.aboutMeText
+			grid-row-start:1
+			grid-row-end: 2	
+
+//56.25 rem = 900px
+@media (min-width: 56.25rem)
+	.projectIndepth
+		display: grid
+		grid-template-columns: 0.5fr 2fr
+
+
+	.sideBar
+		grid-column-start: 1 
+		grid-column-end: 2
+		min-width:13rem
+		display: grid
+		//flex-wrap: wrap
+		grid-template-columns: 1fr
+
+		
+	.headSection
+		grid-column-start:2
+		grid-column-end: 3
+
+	.regularSection
+		grid-column-start: 2 
+		grid-column-end: 3
+
+//70rem = 1120px
+@media (min-width: 70rem)
+	.aboutMe
+		display: grid
+		grid-template-columns: 0.75fr 1fr
+
+		div
+			img
+				margin-right:1rem
+
+		.aboutMeText
+			grid-row-start:1
+			grid-row-end: 2	
+	

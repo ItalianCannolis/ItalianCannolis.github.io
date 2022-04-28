@@ -1,0 +1,487 @@
+/*
+	Syntactically Awesome Stylesheets (SASS, https://sass-lang.com/) is a preprocessing language for CSS. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like SASS though: 
+	- more legible/simpler markup
+	- CSS compression 
+	- reusable code 
+
+// Instead of using the curly brackets {} to contain our properties for a selector's styling, SASS uses indenting. The code below will be processed into *{box-sizing:border-box} in our CSS.
+* 
+	// No ending semicolons ';' are required with property: value statements in SASS 
+	box-sizing: border-box
+	
+
+
+body
+	font-family: 'Bebas Neue'
+	margin: 0rem
+
+.projectIndepth
+	margin: 1rem
+
+h1
+	font-size:1rem
+	
+	margin-bottom:0rem
+
+h2
+	font-size:2.5rem
+
+h3
+	font-size:2rem
+
+h4
+	font-size:1.5rem
+	font-weight: 400
+	margin-top:0.3rem
+
+p
+	font-size:1.1rem
+	width:100%
+
+iframe
+	//display: none
+	max-height: 100%
+	max-width:100%
+	margin-bottom:1rem
+
+a
+	color: #FFFFFF
+	text-decoration: none
+	font-family: 'Source Sans Pro'
+	text-align: center
+	background-color: black
+	transition-duration: 0.5s
+	transition-property: background-color
+	
+	&:hover,&:focus
+		text-decoration: none
+		background-color: #8cbb74
+
+p
+	font-family: 'Source Sans Pro'
+	text-decoration: none
+
+figcaption
+	width:40%
+
+ul
+	margin:0
+	margin-top:1rem
+	margin-bottom:1rem
+
+li
+	font-size: 1.35rem
+	font-weight: 400
+
+section
+	h2
+		margin-bottom: 0.75em
+		margin-top: 0rem
+
+	h3
+		margin-bottom: 0.75em
+		margin-top: 0rem
+	p
+		margin-bottom:1em
+		margin-top:0
+
+img
+	max-width:100%
+	max-height:100%
+	//height:100%
+	//min-width:100%
+	//min-height:100%
+
+
+nav
+	background-color: black
+
+#main-nav
+	a
+		color: #FFFFFF
+		text-decoration: none
+		padding-right: 2rem
+		padding-top: 1rem
+		padding-bottom: 1rem
+		padding-left: 2rem
+		font-size:2rem
+		font-family: 'Bebas Neue'
+
+		background-color: black
+
+		&:hover,&:focus
+			text-decoration: none
+			background-color: #8cbb74
+			//color:#8cbb74
+			
+
+.project
+	border-color: #8cbb74
+	border-radius: 0rem
+	border-style: solid
+	border-width:0.3rem
+	background-color: #8cbb74
+	a
+		padding: 0
+		font-size: 0
+
+		img
+			height: 15.625rem
+
+.projImg
+	border-radius: 0rem
+	opacity: 100%
+	transition-property: opacity
+	transition-duration: 0.5s 
+	&:hover,&:focus
+		opacity: 70%
+	img
+		width:50%
+		height:50%
+
+.noBack
+	padding-left:0.5rem
+	padding-right:0.5rem
+	padding-bottom:1rem
+	margin-bottom:0.5rem
+	background-color: Transparent
+
+	&:hover,&:focus
+		background-color: Transparent
+
+	img
+		opacity: 100%
+		transition-property: opacity
+		transition-duration: 0.5s
+		&:hover,&:focus
+			opacity: 70%
+			
+.tagSection
+	background-color: #8cbb74
+	margin-top:0.5rem
+	margin-bottom:0.5rem
+	div
+		border-radius: 0rem
+		border-color: #FFFFFF
+		border-style: solid
+		margin-left:0.3rem
+		margin-right:0.3rem
+		p
+			text-align: center
+			color:#FFFFFF
+			margin-block-end: 0
+			margin-block-start: 0
+			margin-top: 1em
+			margin-bottom: 1em
+			margin-left: 0
+			margin-right: 0
+			
+
+.tagLayout
+
+	a
+		padding:0.5rem
+
+	.roleTag
+		margin-right: 1.5rem
+		//Remember to set margin bottom later
+		margin-bottom:1.5rem
+
+.limitMargin
+	//margin-top: 0.5rem
+	margin-bottom: 0.75em 
+
+.Timeline
+	height:100%
+
+
+
+img
+	height:100%		
+
+.timesNotedImg
+	img
+		margin-right:0.3rem
+
+.titleH3
+	margin-bottom: 0.15em
+	margin-top:2.5rem
+
+.sidebarH3
+	margin-bottom: 0.25em
+
+.hellgeneDuoImgHolder
+	img
+		margin-right:1rem
+		margin-bottom:0.4rem
+
+.NFTCardCollection
+	img
+		margin-right:0.5rem
+		margin-bottom:0.4rem
+
+.presentedLink
+	padding:0.5rem
+
+	
+.title
+	margin: 0.25rem
+	margin-top:0
+	margin-bottom: 0rem
+	img
+		margin-top:1rem
+	h1
+		margin-top: 1.6rem
+
+h1
+	a
+		color: black
+		text-decoration: none
+		text-align: center
+		font-size:3rem
+		background-color: transparent
+		transition-duration: 0.5s
+		transition-property: color
+		padding: 1rem
+		padding-right:1rem
+		padding-left:1rem
+	
+		&:hover,&:focus
+			text-decoration: none
+			background-color: transparent
+			color:#8cbb74
+
+
+.sideBar2Tag
+	width: 100%
+	height: 25vh // experiment with this value, try changing to 110vh
+	min-height: 12.5rem
+	background-color: white
+	//margin-left: 1rem
+	overflow: hidden
+	position: -webkit-sticky
+	position: sticky
+	top: 0%
+
+.sideBar3Tag
+	width: 100%
+	height: 32vh // experiment with this value, try changing to 110vh
+	min-height: 12.5rem
+	background-color: white
+	//margin-left: 1rem
+	overflow: hidden
+	position: -webkit-sticky
+	position: sticky
+	top: 0%
+
+
+.tagSidebar
+	a
+		padding:0.5rem
+		font-family: 'Bebas Neue'
+		font-size: 2rem
+	.roleTag
+		//margin-right: 1.5rem
+		//Remember to set margin bottom later
+		margin-bottom:1.5rem
+		padding-top:1.5rem
+
+#ProjectLinks
+	margin-bottom:0.5rem
+	a
+		font-family: 'Bebas Neue'
+		padding:1rem
+		padding-right:1.5rem
+		padding-left:1.5rem
+		
+		font-size:1.5rem
+		margin-right:0.5rem
+	
+	.titleH3
+		margin-bottom: 0.65em
+
+#ContactMe
+	margin-bottom:0.5rem
+	a
+		font-family: 'Bebas Neue'
+		padding:1rem
+		padding-right:1.5rem
+		padding-left:1.5rem
+		
+		font-size:1.5rem
+		margin-right:0.5rem
+	
+
+
+#ContactMe
+	margin-bottom:0.5rem
+
+h1
+	a
+		font-family: 'Bebas Neue'
+
+.overlayTag
+	position: absolute
+	left: 2%
+	//bottom:60.5%
+	top:18rem
+	width:81%
+
+	// bottom:7.5%
+	// left: 32%
+	font-size:1.2rem
+	font-family: 'Bebas Neue'
+	color: #FFFFFF
+//23.5 rem = 376px		
+@media (min-width: 23.5rem)
+	.overlayTag
+		left: 2.25%
+		top:19rem
+
+	.title
+		margin: 0.25rem
+		margin-top:0
+		margin-bottom: 0rem
+		img
+			margin-top:1rem
+		h1
+			margin-top: 2.6rem
+
+//24.375 rem = 390px		
+@media (min-width: 24.375rem)
+
+	.noBack
+		padding-left:0.5rem
+		padding-right:0.5rem
+		padding-bottom:0.5rem
+		margin-bottom:0.5rem
+
+	.overlayTag
+		left: 2.25%
+		top: 12rem
+		
+//31.25 rem = 500px
+@media (min-width: 31.25rem)
+	.overlayTag
+		position: absolute
+		left: auto
+		bottom: auto
+		top: auto
+		width:75%
+
+	h1
+		font-size:3rem
+	
+		margin-bottom:0rem
+
+
+
+	.projImg
+		img
+			width:100%
+			height:100%
+
+	
+	.title
+		margin: 1rem
+		margin-top:0
+		margin-bottom: 0rem
+		img
+			margin-top:0
+			padding-top:0.5rem
+		h1
+			margin-top: 1.6rem
+
+
+	.tagLayout
+
+		a
+			padding:0.5rem
+
+		.roleTag
+			margin-right: 1.5rem
+			//Remember to set margin bottom later
+			margin-bottom: 0
+
+
+
+	#main-nav
+	a
+		color: #FFFFFF
+		text-decoration: none
+		padding-right: 5rem
+		padding-top: 1rem
+		padding-bottom: 1rem
+		padding-left: 5rem
+		font-size:2rem
+		font-family: 'Bebas Neue'
+
+		background-color: black
+
+		&:hover,&:focus
+			text-decoration: none
+			background-color: #8cbb74
+			//color:#8cbb74
+
+
+	
+.aboutMe
+	margin:1rem
+	//margin-top:0rem
+	img
+		height:100%
+		
+
+
+
+//37.5 rem = 600px
+@media (min-width: 37.5rem)
+	iframe
+		display: block
+
+
+//56.25 rem = 900px
+@media (min-width: 56.25rem)
+
+	.title
+		margin: 1rem
+		margin-top:0
+		margin-bottom: 0rem
+		img
+			margin-top:1rem
+			padding-top:0rem
+		h1
+			margin-top: 2.6rem
+
+	.sideBar3Tag
+		//At smallest side is a sticky top bar
+		width: 99%
+		height: 42vh // experiment with this value, try changing to 110vh
+		min-height: 12.5rem
+		padding-right:1rem
+		background-color: white
+		overflow: hidden
+		position: -webkit-sticky
+		position: sticky
+		top: 5%
+
+	.sideBar2Tag
+		//At smallest side is a sticky top bar
+		width: 99%
+		height: 25vh // experiment with this value, try changing to 110vh
+		min-height: 12.5rem
+		padding-right:1rem
+		background-color: white
+		overflow: hidden
+		position: -webkit-sticky
+		position: sticky
+		top: 5%	
+
+
+
+@media (min-width: 70rem)
+.aboutMe
+	//margin:1rem
+	//margin-top:0rem
+	img
+		height:100%
