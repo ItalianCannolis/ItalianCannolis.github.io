@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tower of Ash</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="img/Cerone_Logo_Color.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Source+Sans+Pro:wght@300;400&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title"><a class="noBack" href="index.html"><img src="img/Cerone_Logo_Color.png" alt="Nathan Cerone's logo, it is also a link that will go to the homepage" width="100" height="77"></a>
+      <h1><a href="index.html">Nathan Cerone</a></h1>
+    </div>
+    <nav id="main-nav"><a href="index.html">Home</a><a href="about_me.html">About Me</a></nav>
+    <section class="projectIndepth">
+      <div class="headSection">
+        <h2>Tower of Ash</h2>
+      </div>
+      <div class="sideBar3Tag">
+        <h3 class="sidebarH3">Roles:</h3>
+        <div class="tagSidebar"><a class="LevelDesigner roleTag" href="#LevelDesigner">Level Designer</a><a class="Programmer roleTag" href="#Programmer">Programmer	</a></div>
+      </div>
+      <section class="regularSection">
+        <h3 class="titleH3">Duration:</h3>
+        <h4>12 Weeks (September 15th 2022 - Dec 14th 2022)</h4>
+        <h3 class="titleH3">Tools Used:</h3>
+        <h4>Unity, C#, Photoshop, Github</h4>
+        <h3 class="titleH3">Collaborators:</h3>
+        <ul> 
+            <li>Matthew Armstrong - Animator, UI Designer</li>
+            <li>Herman Chan - Level Designer, Animator, UI Designer</li>
+            <li>Jonathan Newman - Character Developer, Sound Design, Music, Programmer, Bitches Aquirer</li>
+
+        </ul>
+        <h3 class="titleH3">Project Summary:</h3>
+        <p>Hell Gene is a rogue-like hack and slash game made in a week for the Brackeys Gamejam 2021.2 with the theme of “Let there be chaos”</p>
+        <p>The player is a descendant of the Demon king and fights through hordes of enemies with a variety of devilish weapons and ever changing rooms of hell to reject their birthright.</p>
+        <p>The team’s goal for this game jam was to push the boundaries on a more technical front by having procedurally generated levels, multiple enemy types and a variety of fighting styles for players to use. Hell Gene was one of the greatest technical challenges we faced.</p>
+        <section id="ProjectLead">
+          <h3 class="titleH3">Project Lead:</h3>
+          <p>My role as project lead once again began way before the actual game jam began. Mostly by doing a more indepth recruitment process, finding people who were interested in working with some of the old team as well as finding people to recruit for the artist positions. </p>
+          <p>I really struggled with mostly finding the artists, I was able to find one but after our last game jam I had quickly realized we were going to need a larger team of artists. Especially since the one artist I did recruit didn’t feel the most comfortable with animating. So I had a discussion with the team about how we were going to need to either mix in some premade assets or we were going to have to simplify the idea.</p>
+          <p>Luckily this discussion opened the way for one of our programmers who felt comfortable animating so long as they had the basis of the character to animate from. This person also mentioned an artist friend they had who we also recruited to act as second to our main artist. Which had led to the resolution of our main problem of lacking artists.</p>
+        </section>
+        <section id="LevelDesigner">
+          <h3 class="titleH3">Level Designer:</h3>
+          <p>My role as a level designer was a very insightful experience into the importance of level design within games. This was especially true as I had to design around the consideration of procedural generation. I knew I had to narrow my scope right away, making the rooms square so that they could be randomly assembled easily. </p>
+          <p>The second challenge came from, how do I make these square rooms unique and fun to play in. Which involved a lot of research into other rogue-likes room layouts and taking inspiration from them and making them at a smaller scale at times as well.</p>
+          <p>I generated around 20 unique layouts using Photoshop with various entrances and exits that I denoted in the names of them. In the layout sketches I denoted where enemies would spawn in from and where the walls and doors for the rooms would be.</p>
+          <div class="hellgeneTriImgHolder"><img src="img/Room_Shapes_18.png" alt="first of 3 early room designs blocked out" width="350" height="350"><img src="img/Room_Shapes_17.png" alt="second of 3 early room designs blocked out" width="350" height="350"><img src="img/Room_Shapes_16.png" alt="third of 3 early room designs blocked out" width="350" height="350"></div>
+          <p>Red squares are expected spawn locations for enemies in each room. The number of tallies represents either density of enemies or strength of enemies. The more tallies the more enemies/more powerful enemies are there, the less means either lesser numbers or weaker enemies. The max is five and lowest is 1. </p>
+          <p>After having a meeting and discussing whether we needed more designs we thought these ones to be fine for our timeframe. I then began to create prefabs of the individual rooms within Unity. </p>
+          <div class="hellgeneDuoImgHolder"></div><img src="img/Room_Shapes_7.png" alt="The early room design blocked out in comparison to the image next to it" width="350" height="350"><img src="img/Hellgene_room_square.JPG" alt="The final room design with slight varation but still showcasing the final product" width="350" height="350">
+          <p>Since the game was top down I had two grids, a floor grid and wall grid, both with a tile map renderer and the walls had a tile map collider. This made it easy to avoid any gaps in the floor and made sure the falls looked flushed.</p>
+        </section>
+        <section id="Programmer">
+          <h3 class="titleH3">Programmer:</h3>
+          <p>As a programmer for this project my objective was implementing pathfinding for the procedurally generated rooms. I used A* pathfinding as it was an easy way to implement pathfinding on the enemies so that they’d target and chase the player.</p>
+          <p>I created an A* object within unity and created a graph of the room as well as passing in the tile map renderer for the walls layer as an obstacle for the AI to avoid.</p>
+          <p>I wrote very simple template code for the team to understand so that everyone who was coding the logic of how the enemies fight could easily manipulate and understand how to adjust the A* pathfinding to their needs.</p>
+          <p>My secondary job as a programmer was being the one in charge of merging at the end of the day and making sure the main branch was never too outdated from any extra branches. As soon as I was given the go ahead by those working on the other branches, I would merge them and sort out any conflicts that might have appeared.</p>
+          <p>Since this was a way larger technical challenge than last time, I ended up having to sort out a few conflicts in merges however most of them I was able to resolve with minimal issue.</p>
+        </section>
+        <section id="Reflection">
+          <h3 class="titleH3">Reflection:</h3>
+          <p>Hell Gene is a project I am very proud of but I also recognize it could have been so much more. We had overscopped massively as our first game jam filled us with a lot of false confidence and we were forced to cut a lot of cool content to make the deadline, however even with all of that, it still had good reception and proved that the work we put into the game was still of great quality and how to narrow the scope better for projects like this.</p>
+        </section>
+        <section id="ProjectLinks">
+          <h3 class="titleH3">Play Hell Gene:</h3>
+          <iframe height="167" width="552" src="https://itch.io/embed/1169036" frameborder="0"><a href="https://kwiper01.itch.io/hell-gene">Hell Gene by Kwiper, KybreX, SanadaYukimura, ItalianCannolis</a></iframe>
+          <h3>Project Links:</h3><a href="https://github.com/Sanada-Yukimura/Hell-Gene">Github</a><a href="https://kwiper01.itch.io/hell-gene">Game</a>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
