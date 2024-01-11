@@ -198,7 +198,7 @@
   grid-column-end: 2;
   min-width: 13rem;
   display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-rows: 0.5fr 2fr;
   grid-template-rows: 0.5fr 2fr;
   -ms-grid-columns: 1fr;
@@ -222,7 +222,7 @@
   grid-column-end: 2;
   min-width: 13rem;
   display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-rows: 0.5fr 2fr;
   grid-template-rows: 0.5fr 2fr;
   -ms-grid-columns: 1fr;
@@ -294,6 +294,8 @@
     -ms-grid-row-span: 1;
     grid-row-end: 2;
   }
+
+
 }
 @media (min-width: 56.25rem) {
   .projectIndepth {
@@ -311,6 +313,32 @@
     min-width: 13rem;
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .sideBar2Tag {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    min-width: 13rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .sideBar3Tag {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    min-width: 13rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
