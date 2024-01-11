@@ -75,12 +75,16 @@
           <p>This was done by putting the variables I needed in serialized fields, so that they could be adjusted in the editor. I also used gizmos to denote the two end points of the arc as well as a third gizmo to denote the apex. This allowed me to visualize the path in the editor without excessive amounts of micro adjustments during testing.</p>
           <img src="img/TOA/Gizmos_in_Action.gif" alt="The early room design blocked out in comparison to the image next to it" width="711" height="400">
 
-          <p>My secondary job as a programmer was being the one in charge of merging at the end of the day and making sure the main branch was never too outdated from any extra branches. As soon as I was given the go ahead by those working on the other branches, I would merge them and sort out any conflicts that might have appeared.</p>
-          <p>Since this was a way larger technical challenge than last time, I ended up having to sort out a few conflicts in merges however most of them I was able to resolve with minimal issue.</p>
+          <p>However the primary programming I did as a whole was reflected in the level design through the process of additive loading. The bulk of the work was done via the use of Unity’s trigger system, when a player would enter the trigger it loaded in the connected rooms’ scene and unloads the rooms’ scene without a direct connection to the room the player was currently in.</p>
+          <p>The scenes would be loaded and unloaded asynchronously to allow for fluid gameplay. This worked very well at the start however it led to respawning enemies as each time the scene was reloaded so were the enemies.</p>
+          <p>This led to the removal of enemies from the scenes themselves and creating enemy spawners that contain the enemy to spawn and its position, each spawner for a room is put into a list for the trigger to reference.</p>
+          <img src="img/TOA/Additive_Loading.PNG" alt="The early room design blocked out in comparison to the image next to it" width="806" height="418">
+
+          <p>This way each room doesn’t respawn enemies that had been defeated in a run improving optimization. The spawners also run off of a coroutine during room spawn allowing for smooth gameplay even when the player moves between rooms.</p>
         </section>
         <section id="Reflection">
           <h3 class="titleH3">Reflection:</h3>
-          <p>Hell Gene is a project I am very proud of but I also recognize it could have been so much more. We had overscopped massively as our first game jam filled us with a lot of false confidence and we were forced to cut a lot of cool content to make the deadline, however even with all of that, it still had good reception and proved that the work we put into the game was still of great quality and how to narrow the scope better for projects like this.</p>
+          <p>Tower of Ash is the project that brings me the most pride to date. It taught me so many new things and really pushed my skills as a level designer and as a programmer forward. Even whilst it’s not a perfect game, Tower of Ash shows my ability to adapt on the fly and that alone gives me a lot of confidence for future projects.</p>
         </section>
         <section id="ProjectLinks">
           <h3 class="titleH3">Play Tower of Ash:</h3>
